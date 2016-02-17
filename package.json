@@ -1,0 +1,30 @@
+{
+  "name": "react.timer",
+  "version": "0.0.1",
+  "description": "A customizable timer component made in ReactJS",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rogermarkussen/react.timer.git"
+  },
+  "keywords": [
+    "timer",
+    "react",
+    "webpack",
+    "babel",
+    "es6",
+    "es7"
+  ],
+  "author": "Roger Markussen (roger.markussen@gmail.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rogermarkussen/react.timer/issues"
+  },
+  "homepage": "https://github.com/rogermarkussen/react.timer#readme",
+  "devDependencies": {
+    "webpack": "^2.0.7-beta"
+  }
+}
