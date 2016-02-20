@@ -8,7 +8,7 @@ function Timer ({ countDown, startTime }) {
   return <span/>
 }
 Timer.propTypes = {
-  countDown: PropTypes.bool.isRequired,
+  countDown: PropTypes.bool,
   startTime: PropTypes.number
 }
 export default Timer

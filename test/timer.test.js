@@ -42,26 +42,26 @@ test('Timer is only returning <span/> when getting countDown=true and startTime=
   t.end()
 })
 
-test('Timer is ok when getting countDown=false and startTime=undefined', (t) => {
+test('Timer is ok when getting falsy countDown and startTime=undefined', (t) => {
   const renderer = createRenderer()
 
-  renderer.render(<Timer countDown={false} />)
+  renderer.render(<Timer />)
   let result = renderer.getRenderOutput()
 
-  t.ok(!result._owner._currentElement.props.countDown, 'countDown-prop should be false')
+  t.ok(!result._owner._currentElement.props.countDown, 'countDown-prop should be undefined')
   t.equal(result._owner._currentElement.props.startTime, undefined, 'startTime-prop should be undefined')
   t.ok(result.type !== 'span', 'Timer is not returning a span')
 
   t.end()
 })
 
-test('Timer is ok when getting countDown=false and startTime={30}', (t) => {
+test('Timer is ok when getting falsy countDown and startTime={30}', (t) => {
   const renderer = createRenderer()
 
-  renderer.render(<Timer countDown={false} startTime={30} />)
+  renderer.render(<Timer startTime={30} />)
   let result = renderer.getRenderOutput()
 
-  t.ok(!result._owner._currentElement.props.countDown, 'countDown-prop should be false')
+  t.ok(!result._owner._currentElement.props.countDown, 'countDown-prop should be undefined')
   t.equal(result._owner._currentElement.props.startTime, 30, 'startTime-prop should be 30')
   t.ok(result.type !== 'span', 'Timer is not returning a span')
 
