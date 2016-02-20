@@ -2,3 +2,4 @@ example
 test
 src
 webpack.config.js
+.babelrc

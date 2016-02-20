@@ -4,7 +4,7 @@
   "description": "A customizable timer component made in ReactJS",
   "main": "index.js",
   "scripts": {
-    "start": "set NODE_ENV=development&& hjs-dev-server",
+    "example": "set NODE_ENV=development&& hjs-dev-server",
     "build": "babel src --out-dir lib",
     "test": "set NODE_ENV=test&& tape -r babel-core/register test/**/*.js | tap-spec"
   },
