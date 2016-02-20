@@ -24,7 +24,7 @@ class CountDown extends Component {
     const time = this.state.time / 10
     const seconds = Math.round(time)
     if (seconds > 9) return <span>{seconds}</span>
-    return <span style={{ color: 'red' }}>{time}</span>
+    return <span style={{ color: 'red' }}>{time.toFixed(1)}</span>
   }
 }
 CountDown.propTypes = {
