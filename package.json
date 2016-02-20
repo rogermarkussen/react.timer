@@ -1,6 +1,6 @@
 {
   "name": "react.timer",
-  "version": "1.1.0",
+  "version": "1.2.5",
   "description": "A customizable timer component made in ReactJS",
   "main": "index.js",
   "scripts": {
