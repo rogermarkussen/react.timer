@@ -1,4 +1,4 @@
-import React, { Component, PropTypes } from 'react'
+import React, { Component } from 'react'
 import convertTime from './convert-time'
 
 class CountUp extends Component {
@@ -23,8 +23,5 @@ class CountUp extends Component {
   render () {
     return <span>{convertTime(this.state.time)}</span>
   }
-}
-CountUp.propTypes = {
-  startTime: PropTypes.number
 }
 export default CountUp
