@@ -29,7 +29,8 @@ npm i react.timer
 #### To run the example
 - Clone the repo
 - npm i
-- npm start
+- npm start  
+
 #### To run the 27 tests
 - clone the repo
 - npm i
