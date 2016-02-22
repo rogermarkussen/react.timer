@@ -2,8 +2,8 @@ import React, { Component } from 'react'
 import convertTime from './convert-time'
 
 class CountUp extends Component {
-  constructor (props) {
-    super(props)
+  constructor () {
+    super()
     this.state = { time: 0 }
     this.tick = this.tick.bind(this)
   }

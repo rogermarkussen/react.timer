@@ -1,7 +1,7 @@
 {
   "name": "react.timer",
-  "version": "1.4.0",
-  "description": "A customizable timer component made in ReactJS",
+  "version": "1.5.0",
+  "description": "A super simple timer component made in ReactJS",
   "main": "index.js",
   "scripts": {
     "start": "set NODE_ENV=development&& hjs-dev-server",

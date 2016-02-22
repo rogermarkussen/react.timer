@@ -3,7 +3,7 @@ import { createRenderer } from 'react-addons-test-utils'
 import test from 'tape'
 import CountUp from '../src/countup'
 
-test.only('CountUp is returning a span with "00:00"', (t) => {
+test('CountUp is returning a span with "00:00"', (t) => {
   const renderer = createRenderer()
 
   renderer.render(<CountUp startTime={21} />)
