@@ -4,6 +4,7 @@ import convertTime from './convert-time'
 class CountUp extends Component {
   constructor () {
     super()
+    this.startTime = Date.now()
     this.state = { time: 0 }
     this.tick = this.tick.bind(this)
   }
@@ -17,11 +18,11 @@ class CountUp extends Component {
   }
 
   tick () {
-    this.setState({ time: this.state.time + 1 })
+    this.setState({ time: Date.now() - this.startTime })
   }
 
   render () {
-    return <span>{convertTime(this.state.time)}</span>
+    return <span>{convertTime(Math.round(this.state.time / 1000))}</span>
   }
 }
 export default CountUp
