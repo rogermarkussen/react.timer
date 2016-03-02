@@ -5,8 +5,7 @@ class CountDown extends Component {
     super(props)
     this.state = { time: props.startTime * 10 }
     this.tick = this.tick.bind(this)
-    const now = new Date()
-    this.stopTime = now.setMilliseconds(now.getMilliseconds() + props.startTime * 1000)
+    this.stopTime = Date.now() + (props.startTime * 1000)
   }
 
   componentDidMount () {

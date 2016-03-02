@@ -22,7 +22,7 @@ class CountUp extends Component {
   }
 
   render () {
-    return <span>{convertTime(Math.round(this.state.time / 1000))}</span>
+    return <span>{convertTime(this.state.time)}</span>
   }
 }
 export default CountUp
