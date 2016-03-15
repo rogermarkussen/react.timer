@@ -1,12 +1,13 @@
 {
   "name": "react.timer",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "A super simple timer component made in ReactJS",
   "main": "index.js",
   "scripts": {
     "start": "set NODE_ENV=development&& hjs-dev-server",
     "build": "set NODE_ENV=production&& babel src --out-dir lib",
-    "test": "set NODE_ENV=test&& tape -r babel-core/register test/**/*.js | tap-spec"
+    "test": "set NODE_ENV=test&& ava --tap | tap-dot",
+    "test:watch": "set NODE_ENV=test&& ava --watch"
   },
   "repository": {
     "type": "git",
@@ -27,6 +28,7 @@
   },
   "homepage": "https://github.com/rogermarkussen/react.timer#readme",
   "devDependencies": {
+    "ava": "^0.13.0",
     "babel": "^6.5.2",
     "babel-core": "^6.5.2",
     "babel-loader": "^6.2.3",
@@ -35,12 +37,25 @@
     "babel-preset-react-hmre": "^1.1.0",
     "hjs-webpack": "^7.2.1",
     "react-addons-test-utils": "^0.14.7",
-    "tap-spec": "^4.1.1",
-    "tape": "^4.4.0",
+    "tap-dot": "^1.0.4",
     "webpack": "^1.12.13"
   },
   "dependencies": {
     "react": "^0.14.7",
     "react-dom": "^0.14.7"
+  },
+  "ava": {
+    "files": [
+      "test/*.js"
+    ],
+    "source": [
+      "**/*.{js,jsx}"
+    ],
+    "failFast": true,
+    "tap": false,
+    "require": [
+      "babel-register"
+    ],
+    "babel": "inherit"
   }
 }

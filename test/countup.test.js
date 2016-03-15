@@ -1,6 +1,6 @@
 import React from 'react'
 import { createRenderer } from 'react-addons-test-utils'
-import test from 'tape'
+import test from 'ava'
 import CountUp from '../src/countup'
 
 test('CountUp is returning a span with "00:00"', (t) => {
@@ -9,8 +9,6 @@ test('CountUp is returning a span with "00:00"', (t) => {
   renderer.render(<CountUp startTime={21} />)
   let result = renderer.getRenderOutput()
 
-  t.equal(result.props.children, '00:00', 'CountUp should display "00:00"')
+  t.is(result.props.children, '00:00', 'CountUp should display "00:00"')
   t.ok(result.type === 'span', 'CountUp is a span')
-
-  t.end()
 })
