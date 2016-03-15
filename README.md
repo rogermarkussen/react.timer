@@ -1,4 +1,4 @@
-# react.timer
+# react.timers
 A super simple timer component made in ReactJS
 #### What is react.timer?
 This is a very simple timer component that can count up or down. 
